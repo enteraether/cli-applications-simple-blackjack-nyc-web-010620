@@ -42,8 +42,10 @@ def hit?(card_total)
   user_input = get_user_input
 # binding.pry
   until user_input == 's' || user_input == 'h' do
+    invalid_command
     prompt_user
- end
+    user_input = get_user_input
+  end
 
   if user_input.downcase == 's'
     card_total
