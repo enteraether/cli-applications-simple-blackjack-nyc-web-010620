@@ -41,10 +41,10 @@ def hit?(card_total)
   prompt_user
   user_input = get_user_input
 # binding.pry
-  if user_input == 's'
+  if user_input.downcase == 's'
     card_total
 
-  elsif user_input == 'h'
+  elsif user_input.downcase == 'h'
     deal_card
     card_total += deal_card
   else
