@@ -53,10 +53,7 @@ def hit?(card_total)
   elsif user_input.downcase == 'h'
     card_total += deal_card
 end
-
-
-    # binding.pry
-  end
+  # binding.pry
   card_total
 end
 
